@@ -234,9 +234,6 @@
 
 
 /* ===================== Profile / Hero ===================== */
-/* Grid দিয়ে ৩টা কলাম বানানো হয়েছে: বাম (ঘড়ি) | মাঝখান (ছবি) | ডান (খালি/spacer)
-   এতে ছবি সবসময় পেজের ঠিক মাঝখানে থাকবে, আর ঘড়ি সবসময় ছবির বাম পাশেই থাকবে,
-   কোনো screen size এ ঘড়ি ছবির উপরে/নিচে/ডানে চলে যাবে না। */
 .omor-image {
     display: grid;
     grid-template-columns: minmax(90px, 1fr) auto minmax(90px, 1fr);
@@ -421,29 +418,6 @@
 
 
 /* ===================== Contact button + arrows ===================== */
-.btn {
-    right: 20px;
-    color: white;
-    top: 60px;
-    z-index: 999;
-    position: fixed;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 12px 25px;
-    border-radius: 50px;
-    text-decoration: none;
-    background-color: rgba(30, 41, 59, 0.7);
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.btn:hover {
-    transform: scale(1.1);
-    background-color: #4cd137;
-    color: black;
-    border: 1px solid #222;
-    box-shadow: 0 0 15px rgba(76, 209, 55, 0.5);
-}
 
 .fixed-arrow {
     position: fixed;
