@@ -286,3 +286,18 @@ if (testimonialTrack && testimonialDotsWrap) {
         showTestimonial((activeTestimonial + 1) % testimonialCards.length);
     }, 10000);
 }
+
+
+//Contact me btn Hidden
+const contactBtn = document.getElementById('contactBtn');
+  const navbar = document.querySelector('.Navbar');
+
+  window.addEventListener('scroll', () => {
+    const navbarHeight = navbar.offsetHeight;
+
+    if (window.scrollY > navbarHeight) {
+      contactBtn.classList.add('show');
+    } else {
+      contactBtn.classList.remove('show');
+    }
+  });
