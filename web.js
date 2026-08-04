@@ -289,15 +289,24 @@ if (testimonialTrack && testimonialDotsWrap) {
 
 
 //Contact me btn Hidden
-const contactBtn = document.getElementById('contactBtn');
+  const contactBtn = document.getElementById('contactBtn');
   const navbar = document.querySelector('.Navbar');
+  const mobileMenu = document.querySelector('.Navbar-mobile');
 
-  window.addEventListener('scroll', () => {
+  function toggleButton() {
     const navbarHeight = navbar.offsetHeight;
+    const isMobileMenuOpen = mobileMenu.classList.contains('active');
 
-    if (window.scrollY > navbarHeight) {
+    if (window.scrollY > navbarHeight && !isMobileMenuOpen) {
       contactBtn.classList.add('show');
     } else {
       contactBtn.classList.remove('show');
     }
+  }
+
+  window.addEventListener('scroll', toggleButton);
+
+  const hamburgerBtn = document.querySelector('.hamburger');
+  hamburgerBtn.addEventListener('click', () => {
+    setTimeout(toggleButton, 10);
   });
