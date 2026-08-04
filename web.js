@@ -290,23 +290,14 @@ if (testimonialTrack && testimonialDotsWrap) {
 
 //Contact me btn Hidden
   const contactBtn = document.getElementById('contactBtn');
-  const navbar = document.querySelector('.Navbar');
-  const mobileMenu = document.querySelector('.Navbar-mobile');
+  const navbar = document.querySelector('.navbar');
 
-  function toggleButton() {
+  window.addEventListener('scroll', () => {
     const navbarHeight = navbar.offsetHeight;
-    const isMobileMenuOpen = mobileMenu.classList.contains('active');
 
-    if (window.scrollY > navbarHeight && !isMobileMenuOpen) {
+    if (window.scrollY > navbarHeight) {
       contactBtn.classList.add('show');
     } else {
       contactBtn.classList.remove('show');
     }
-  }
-
-  window.addEventListener('scroll', toggleButton);
-
-  const hamburgerBtn = document.querySelector('.hamburger');
-  hamburgerBtn.addEventListener('click', () => {
-    setTimeout(toggleButton, 10);
   });
