@@ -1,0 +1,493 @@
+/* ===========================
+   Reset
+=========================== */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000000;
+    color: white;
+}
+
+
+/* ===========================
+   Mouse Glow (follows cursor)
+=========================== */
+.mouse-glow {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(76, 209, 55, 0.2) 0%, rgba(76, 209, 55, 0) 70%);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease-out;
+}
+
+
+/* ===========================
+   Header / Navbar (pill style, sliding green marker)
+=========================== */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(10px);
+}
+
+.navbar {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    padding: clamp(6px, 1.6vw, 10px) clamp(8px, 2.2vw, 16px);
+    border-radius: 30px;
+    display: inline-block;
+    width: 96vw;
+    max-width: 760px;
+    box-sizing: border-box;
+    border: 1px solid #4cd13733;
+}
+
+.navbar ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.navbar ul li {
+    padding: clamp(6px, 1.4vw, 12px) clamp(6px, 1.2vw, 16px);
+    cursor: pointer;
+    z-index: 1;
+    flex-shrink: 1;
+    min-width: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: clamp(0.62rem, 1.8vw, 0.92rem);
+    transition: 0.3s;
+}
+
+#marker {
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background: #4cd137;
+    border-radius: 8px;
+    transition: left 0.5s ease, width 0.5s ease;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 8px #4cd137;
+    z-index: 0;
+}
+
+
+/* ===========================
+   Mobile hamburger + side drawer
+=========================== */
+#scroll-menu-icon {
+    display: none;
+    position: fixed;
+    top: 22px;
+    left: 20px;
+    width: 42px;
+    height: 28px;
+    cursor: pointer;
+    z-index: 3000;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#scroll-menu-icon span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #4cd137;
+    border-radius: 10px;
+}
+
+#side-drawer {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 260px;
+    max-width: 80%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.97);
+    border-right: 1px solid #4cd13755;
+    transition: 0.5s ease;
+    z-index: 2500;
+}
+
+#side-drawer.open {
+    left: 0;
+}
+
+.drawer-content {
+    padding-top: 90px;
+}
+
+.drawer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.drawer-content ul li a {
+    display: block;
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.05rem;
+    border-bottom: 1px solid #1a1a1a;
+    transition: 0.3s;
+}
+
+.drawer-content ul li a:hover {
+    background: #4cd137;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    #scroll-menu-icon {
+        display: flex;
+    }
+}
+
+
+/* ===========================
+   Hero
+=========================== */
+.hero {
+    text-align: center;
+    padding: 80px 20px 60px;
+    border-bottom: 1px solid #1a3a1a;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 18px;
+    color: #4cd137;
+    text-shadow: 0 0 20px #4cd13744;
+}
+
+.hero p {
+    color: #f2f2f2;
+    font-size: 17px;
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+
+/* ===========================
+   Portfolio Section
+=========================== */
+.portfolio {
+    padding: 60px 5%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    width: 100%;
+}
+
+
+/* ===========================
+   Card
+=========================== */
+.card {
+    background: #0a0a0a;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: transform 0.4s, box-shadow 0.4s;
+    border: 1.5px solid #4cd13755;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 28px #4cd13744, 0 0 6px #4cd13722;
+    border-color: #4cd137;
+}
+
+
+/* ===========================
+   Card Image — full visible, clickable
+=========================== */
+.card-img-wrap {
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    background: #111;
+}
+
+.card-img-wrap img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    transition: transform 0.4s;
+}
+
+.card-img-wrap:hover img {
+    transform: scale(1.03);
+}
+
+/* Zoom icon overlay */
+.card-img-wrap::after {
+    content: "🔍";
+    position: absolute;
+    bottom: 10px;
+    right: 12px;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+.card-img-wrap:hover::after {
+    opacity: 1;
+}
+
+
+/* ===========================
+   Card Content
+=========================== */
+.content {
+    padding: 22px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.content h2 {
+    font-size: 19px;
+    margin-bottom: 10px;
+    color: #4cd137;
+}
+
+.content p {
+    color: #f2f2f2;
+    line-height: 1.7;
+    font-size: 14.5px;
+    flex: 1;
+}
+
+/* Website link */
+.site-link {
+    display: inline-block;
+    margin-top: 16px;
+    color: #4cd137;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #4cd13766;
+    padding: 8px 16px;
+    border-radius: 7px;
+    transition: background 0.3s, color 0.3s;
+    align-self: flex-start;
+}
+
+.site-link:hover {
+    background: #4cd137;
+    color: #000;
+}
+
+
+/* ===========================
+   Lightbox
+=========================== */
+#lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.92);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#lightbox.active {
+    display: flex;
+}
+
+#lightbox img {
+    max-width: 90vw;
+    max-height: 88vh;
+    border-radius: 10px;
+    border: 2px solid #4cd137;
+    box-shadow: 0 0 40px #4cd13755;
+    object-fit: contain;
+}
+
+#lightbox-close {
+    position: fixed;
+    top: 18px;
+    right: 24px;
+    font-size: 36px;
+    color: #4cd137;
+    cursor: pointer;
+    line-height: 1;
+    z-index: 10000;
+    transition: color 0.2s;
+}
+
+#lightbox-close:hover {
+    color: white;
+}
+
+
+/* ===========================
+   Footer
+=========================== */
+.footer {
+    text-align: center;
+    padding: 38px 20px 28px;
+    background-color: #0d1b2a;
+    color: #f2f2f2;
+    font-size: 14px;
+    margin-top: 60px;
+    border-top: 2px solid #4cd137;
+}
+
+.footer p {
+    margin-bottom: 20px;
+    color: #f2f2f2;
+}
+
+/* Social icons row */
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 8px 14px;
+    border: 1px solid #4cd13744;
+    border-radius: 50px;
+    transition: background 0.3s, color 0.3s, border-color 0.3s;
+    white-space: nowrap;
+}
+
+.social-links a:hover {
+    background: #4cd137;
+    color: #000;
+    border-color: #4cd137;
+}
+
+.social-links a svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    fill: currentColor;
+}
+
+
+/* ===========================
+   Section Header (per category)
+=========================== */
+.portfolio + .portfolio {
+    border-top: 1px solid #1a3a1a;
+}
+
+.section-header {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 44px;
+}
+
+.section-title {
+    font-size: 32px;
+    color: #4cd137;
+    margin-bottom: 12px;
+}
+
+.section-desc {
+    color: #f2f2f2;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* ===========================
+   Technology Tags (project cards)
+=========================== */
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 14px 0 4px;
+}
+
+.tag {
+    background: #4cd13711;
+    border: 1px solid #4cd13744;
+    color: #4cd137;
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 50px;
+    white-space: nowrap;
+}
+
+
+/* ===========================
+   Responsive
+=========================== */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    header {
+        padding: 14px 0;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .social-links {
+        gap: 10px;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+}

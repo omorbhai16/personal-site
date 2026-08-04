@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+
+    <div class="mouse-glow"></div>
+
+    <!-- ========================
+         Header / Navigation
+    ========================= -->
+    <header>
+        <nav class="navbar">
+            <div id="marker"></div>
+            <ul>
+                <li onmouseenter="moveIndicator(this)"><a href="../index.html">Home</a></li>
+                <li onmouseenter="moveIndicator(this)"><a href="#digital-marketing" title="Digital Marketing">Marketing</a></li>
+                <li onmouseenter="moveIndicator(this)"><a href="#uiux" title="UI/UX Design">UI/UX</a></li>
+                <li onmouseenter="moveIndicator(this)"><a href="#webdev" title="Web Development">Web Dev</a></li>
+                <li onmouseenter="moveIndicator(this)"><a href="#softwaredev" title="Software Development">Software</a></li>
+                <li onmouseenter="moveIndicator(this)"><a href="#ai-automation" title="AI Automation">Automation</a></li>
+                <li onmouseenter="moveIndicator(this)"><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="side-drawer">
+        <div class="drawer-content">
+            <ul>
+                <li><a href="../index.html" onclick="toggleSideMenu()">Home</a></li>
+                <li><a href="#digital-marketing" onclick="toggleSideMenu()">Digital Marketing</a></li>
+                <li><a href="#uiux" onclick="toggleSideMenu()">UI/UX Design</a></li>
+                <li><a href="#webdev" onclick="toggleSideMenu()">Web Development</a></li>
+                <li><a href="#softwaredev" onclick="toggleSideMenu()">Software Development</a></li>
+                <li><a href="#ai-automation" onclick="toggleSideMenu()">AI Automation</a></li>
+                <li><a href="#footer" onclick="toggleSideMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="scroll-menu-icon" onclick="toggleSideMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- ========================
+         Hero
+    ========================= -->
+    <section class="hero">
+        <h1>My All Projects</h1>
+        <p></p>
+    </section>
+
+    <!-- ========================
+         Digital Marketing
+    ========================= -->
+    <section class="portfolio" id="digital-marketing">
+        <div class="section-header">
+            <h2 class="section-title">Digital Marketing</h2>
+            <p class="section-desc">Growth work across YouTube and TikTok — building audiences, planning content, and turning channels around with hands-on strategy.</p>
+        </div>
+        <div class="container">
+
+            <!-- Project 1 -->
+            <div class="card">
+                <div class="card-img-wrap" onclick="openLightbox('port-img/gm.png')">
+                    <img src="port-img/gm.png" alt="Project 1 - AI Website">
+                </div>
+                <div class="content">
+                    <h2>Personal gaming channel success</h2>
+                    <p>I used to play Free Fire game sometimes in my free time, then I thought that I am a digital marketer. So why don't I test my skills. Right from then on, I created a gaming channel to test my skills. Where I was able to create a family of 4K+ subscribers by uploading 6 long videos and 5 short videos on the channel. Where there are videos on my channel, which have got 130k+ views in total,</p>
+                    <a href="https://youtube.com/@omor_bhai_16?" target="_blank" class="site-link">View the YouTube channel</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="card">
+                <div class="card-img-wrap" onclick="openLightbox('port-img/tt.png')">
+                    <img src="port-img/tt.png" alt="Project 2 - Device Website">
+                </div>
+                <div class="content">
+                    <h2>Personal gaming TikTok account success</h2>
+                    <p>This is the success of my TikTok ID, where I have been able to create a huge community of 6500+ followers on my TikTok ID, the video that has the least views on my TikTok ID also has 10K+ views, it doesn't end here, and there is also a video inside my TikTok ID, which has about 480K+ views, so all in all, if I work in marketing in a company, then I definitely hope that something good will happen in that company, because the better the marketing is done, the more profit the company gets.</p>
+                    <a href="https://www.tiktok.com/@omorbhai_16?" target="_blank" class="site-link">View the TikTok account</a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="card">
+                <div class="card-img-wrap" onclick="openLightbox('port-img/rt.jpg')">
+                    <img src="port-img/rt.jpg" alt="Project 3 - Business Website">
+                </div>
+                <div class="content">
+                    <h2>View the client's channel</h2>
+                    <p>A friend of mine had a YouTube channel where he had gained 2 million subscribers by doing voice-overs on other people's videos. But suddenly due to copyright issues, the channel's video views dropped from lakhs to thousands. I took up the challenge and took charge of the channel for 1 month. With my proper planning, the channel gained 38.5 million views and 236.8 thousand hours of watch time in just 1 month, which is an incredible achievement!</p>
+                    <a href="https://youtube.com/@ratul88k?" target="_blank" class="site-link">View the client's channel</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================
+         UI/UX Design
+    ========================= -->
+    <section class="portfolio" id="uiux">
+        <div class="section-header">
+            <h2 class="section-title">UI/UX Design</h2>
+            <p class="section-desc">Product and interface design work — from wireframes to polished, user-tested screens.</p>
+        </div>
+        <div class="container">
+         </div>
+    </section>
+
+
+
+
+    <!-- ========================
+         Web Development
+    ========================= -->
+    <section class="portfolio" id="webdev">
+        <div class="section-header">
+            <h2 class="section-title">Web Development</h2>
+            <p class="section-desc">Websites and web apps built with HTML, CSS and JavaScript — from small tools to full portfolio sites.</p>
+        </div>
+        <div class="container">
+
+        </div>
+    </section>
+
+
+
+
+    <!-- ========================
+         Software Development
+    ========================= -->
+    <section class="portfolio" id="softwaredev">
+        <div class="section-header">
+            <h2 class="section-title">Software Development</h2>
+            <p class="section-desc">Applications and tools built beyond the browser.</p>
+        </div>
+           
+        </div>
+    </section>
+
+
+
+    <!-- ========================
+         AI Automation
+    ========================= -->
+    <section class="portfolio" id="ai-automation">
+        <div class="section-header">
+            <h2 class="section-title">AI Automation</h2>
+            <p class="section-desc">Workflows and tools that use AI to automate repetitive tasks and save time.</p>
+        </div>
+        <div class="container">
+
+        </div>
+    </section>
+
+    <!-- ========================
+         Lightbox
+    ========================= -->
+    <div id="lightbox" onclick="closeLightbox()">
+        <span id="lightbox-close" onclick="closeLightbox()">&#x2715;</span>
+        <img id="lightbox-img" src="" alt="Preview">
+    </div>
+
+    <!-- ========================
+         Footer
+    ========================= -->
+<footer class="footer" id="footer">
+        <div class="social-links">
+            <a href="mailto:codewithomor@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.facebook.com/share/18e7N9Y3kr/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://youtube.com/@omor_bhai_16?si=rFuAT7LteZLnqcGO" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@omorbhai_16?_r=1&_t=ZS-95OkCOlTrXx" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.linkedin.com/in/omor-faruk16/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://wa.me/+8801933559831" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://t.me/omorbhai_16" target="_blank"><i class="fab fa-telegram"></i></a>
+            <a href="https://github.com/omorbhai16" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <p>&copy; 2026 Omor Faruk, All Rights Reserved</p>
+    </footer>
+
+    <!-- ========================
+         Lightbox Script
+    ========================= -->
+    <script>
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').classList.add('active');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.getElementById('lightbox-img').src = '';
+        }
+
+        // Close on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+
+    <!-- ========================
+         Navbar / Drawer / Mouse-glow Script
+    ========================= -->
+    <script>
+        // Sliding green marker under the hovered nav item
+        function moveIndicator(el) {
+            const marker = document.getElementById('marker');
+            marker.style.left = el.offsetLeft + 'px';
+            marker.style.width = el.offsetWidth + 'px';
+        }
+
+        // Mobile hamburger side drawer
+        function toggleSideMenu() {
+            document.getElementById('side-drawer').classList.toggle('open');
+        }
+
+        // Green glow that follows the mouse cursor
+        document.addEventListener('mousemove', function (e) {
+            const glow = document.querySelector('.mouse-glow');
+            if (glow) {
+                glow.style.left = e.clientX + 'px';
+                glow.style.top = e.clientY + 'px';
+            }
+        });
+    </script>
+
+</body>
+</html>
