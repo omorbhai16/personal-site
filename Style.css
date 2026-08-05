@@ -29,7 +29,7 @@ html {
     color: ghostwhite;
     width: 100%;
     max-width: 100%;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
