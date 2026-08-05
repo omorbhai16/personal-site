@@ -15,6 +15,7 @@ html {
 
 /* ===================== Body ===================== */
 .Body {
+    /* আপনার পূর্বের অন্যান্য প্রপার্টিগুলো যেমন আছে থাকবে */
     display: flex;
     flex-wrap: wrap;
     min-height: 100vh;
@@ -29,12 +30,14 @@ html {
     color: ghostwhite;
     width: 100%;
     max-width: 100%;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)), url(web-img/bg.jpg);
-}
+
+    /* --- ব্যাকগ্রাউন্ড অপ্টিমাইজেশন --- */
+    background-attachment: scroll; /* ল্যাগ বা সাদা হওয়া রোধ করতে */
+    background-repeat: repeat;     /* গ্রিড যাতে পুরো পেজে সুন্দরভাবে রিপিট হয় */
+    background-position: top center;
+    
+    /* ব্যাকগ্রাউন্ড ছবির সাথে গ্রেডিয়েন্ট */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.75)), url(web-img/bg.jpg);
 
 
 /* ===================== Mouse glow ===================== */
