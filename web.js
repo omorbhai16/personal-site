@@ -69,7 +69,7 @@ document.querySelectorAll('.skill-box').forEach(box => {
 
 
 //hero rotating role text animaton
-const skillList = ["Digital Solutions Consultant", "Full Stack Web Development", "Software Development", "AI Automation", "Mobile App Development", "UI/UX Design", "Digital Marketing"];
+const skillList = ["Digital Solutions Consultant", "Project Manager", "Full Stack Web Development", "Software Development", "AI Automation", "Mobile App Development", "UI/UX Design", "Digital Marketing"];
 let wordIdx = 0;
 const target = document.getElementById('smoke-target');
 
@@ -113,67 +113,6 @@ window.onload = runSmokeAnimation;
 
 
 
-//bwebsite two site arrow
-document.getElementById('scroll-down').addEventListener('click', function () {
-    window.scrollBy({
-        top: window.innerHeight,
-        behavior: 'smooth'
-    });
-});
-
-document.getElementById('scroll-up').addEventListener('click', function () {
-    window.scrollBy({
-        top: -window.innerHeight,
-        behavior: 'smooth'
-    });
-});
-
-
-
-
-
-//Thank you sir hover love effect
-const targetBtn = document.getElementById('targetBtn');
-const mainBody = document.body;
-
-function createExplosion() {
-    mainBody.classList.add('pink-bg');
-
-    for (let i = 0; i < 100; i++) {
-        const heart = document.createElement('div');
-        heart.classList.add('heart');
-        heart.innerText = '❤️';
-
-        const angle = Math.random() * Math.PI * 2;
-        const distance = Math.random() * 150 + 50;
-
-        const x = Math.cos(angle) * distance + "px";
-        const y = Math.sin(angle) * distance + "px";
-        const xEnd = (Math.cos(angle) * distance * 1.5) + "px";
-        const duration = Math.random() * 2 + 2;
-        const rotation = (Math.random() - 0.5) * 400 + "deg";
-
-        heart.style.setProperty('--x', x);
-        heart.style.setProperty('--y', y);
-        heart.style.setProperty('--x-end', xEnd);
-        heart.style.setProperty('--duration', duration + 's');
-        heart.style.setProperty('--rotation', rotation);
-
-        targetBtn.parentElement.appendChild(heart);
-
-        setTimeout(() => {
-            heart.remove();
-        }, duration * 1000);
-    }
-}
-
-targetBtn.addEventListener('mouseenter', createExplosion);
-
-targetBtn.addEventListener('mouseleave', () => {
-    mainBody.classList.remove('pink-bg');
-});
-
-targetBtn.addEventListener('mousedown', createExplosion);
 
 
 
