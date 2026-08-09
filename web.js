@@ -69,7 +69,7 @@ document.querySelectorAll('.skill-box').forEach(box => {
 
 
 //hero rotating role text animaton
-const skillList = ["Digital Solutions Consultant", "Project Manager", "Full Stack Web Development", "Software Development", "AI Automation", "Mobile App Development", "UI/UX Design", "Digital Marketing"];
+const skillList = ["Digital Solutions Consultant", "Full Stack Web Development", "Software Development", "AI Automation", "Mobile App Development", "UI/UX Design", "Digital Marketing"];
 let wordIdx = 0;
 const target = document.getElementById('smoke-target');
 
@@ -286,18 +286,3 @@ if (testimonialTrack && testimonialDotsWrap) {
         showTestimonial((activeTestimonial + 1) % testimonialCards.length);
     }, 10000);
 }
-
-
-//Contact me btn Hidden
-  const contactBtn = document.getElementById('contactBtn');
-  const navbar = document.querySelector('.navbar');
-
-  window.addEventListener('scroll', () => {
-    const navbarHeight = navbar.offsetHeight;
-
-    if (window.scrollY > navbarHeight) {
-      contactBtn.classList.add('show');
-    } else {
-      contactBtn.classList.remove('show');
-    }
-  });
