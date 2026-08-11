@@ -3,6 +3,7 @@ html {
     overflow-x: hidden;
     overscroll-behavior-y: none;
     width: 100%;
+    background-color: #05070a;
 }
 
 * {
@@ -30,11 +31,25 @@ html {
     color: ghostwhite;
     width: 100%;
     max-width: 100%;
+    background-color: #05070a;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)), url(web-img/bg.jpg);
+}
+
+/* Fast/flick scrolling on mobile browsers can momentarily outrun a
+   "fixed" background repaint on the body, letting the page's default
+   white canvas flash through. Mobile browsers also handle
+   background-attachment: fixed poorly (it's one of the most common
+   causes of this exact white-flash bug), so we switch it to a normal
+   scrolling background on touch/small-screen devices. html/body already
+   have a dark background-color above as a solid fallback either way. */
+@media (max-width: 900px), (hover: none) and (pointer: coarse) {
+    .Body {
+        background-attachment: scroll;
+    }
 }
 
 
