@@ -30,7 +30,6 @@ html {
     color: ghostwhite;
     width: 100%;
     max-width: 100%;
-    background-attachment: fixed;
     background-size: 75%;
     background-position: center;
     background-repeat: no-repeat;
@@ -38,9 +37,6 @@ html {
 }
 
 /* ===================== Responsive background image size ===================== */
-/* কম্পিউটার / ল্যাপটপ: ব্যাকগ্ৰাউন্ড ছবি ৪ ভাগের ৩ ভাগ (75%) দেখাবে (ডিফল্ট, উপরে সেট করা) */
-
-/* ট্যাবলেট: ব্যাকগ্ৰাউন্ড ছবি ৪ ভাগের ২ ভাগ (50%) দেখাবে */
 @media (max-width: 1024px) {
     .Body {
         background-attachment: scroll;
@@ -48,7 +44,6 @@ html {
     }
 }
 
-/* মোবাইল: ব্যাকগ্ৰাউন্ড ছবি ৪ ভাগের ১ ভাগ (25%) দেখাবে */
 @media (max-width: 600px) {
     .Body {
         background-size: 25%;
