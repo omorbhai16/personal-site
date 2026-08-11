@@ -16,7 +16,6 @@ html {
 
 /* ===================== Body ===================== */
 .Body {
-    overscroll-behavior-y: none;
     display: flex;
     flex-wrap: wrap;
     min-height: 100vh;
