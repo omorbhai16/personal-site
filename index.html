@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Meet Omor Faruk, Founder & CEO who works directly with clients to plan, manage and deliver digital projects through his company and a team of 25+ professionals." />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <title>Omor Faruk — Founder &amp; CEO | Digital Solutions &amp; Project Management</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Denk+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="web-img/favicon.jpg" type="image/x-icon" />
+</head>
+<body class="Body">
+    <div class="mouse-glow"></div>
+
+    <header>
+        <nav class="navbar">
+            <div id="marker"></div>
+            <ul>
+                <li onmouseenter="moveIndicator(this)"><a href="#home">Home</a></li>
+                <li onmouseenter="moveIndicator(this)"><a href="#about">About Me</a></li>
+                <li onmouseenter="moveIndicator(this)"><a href="#services">What I Do</a></li>
+                <li onmouseenter="moveIndicator(this)"><a href="portfolio/portfolio.html">Portfolio</a></li>
+                <li onmouseenter="moveIndicator(this)"><a href="#howiwork">How I Work</a></li>
+                <li onmouseenter="moveIndicator(this)"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="side-drawer">
+        <div class="drawer-content">
+            <ul>
+                <li><a href="#home" onclick="toggleSideMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleSideMenu()">About Me</a></li>
+                <li><a href="#services" onclick="toggleSideMenu()">What I Do</a></li>
+                <li><a href="portfolio/portfolio.html" onclick="toggleSideMenu()">Portfolio</a></li>
+                <li><a href="#howiwork" onclick="toggleSideMenu()">How I Work</a></li>
+                <li><a href="#contact" onclick="toggleSideMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="scroll-menu-icon" onclick="toggleSideMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- ===================== HOME / HERO ===================== -->
+    <div class="omor-image" id="home">
+        <div id="clock-container">
+            <div id="digital-clock"></div>
+            <div id="day-name"></div>
+            <div id="full-date"></div>
+        </div>
+        <div class="profile-image-box">
+            <img src="web-img/omorr.jpg" alt="omorfaruk" width="300" height="300" class="profile-image" />
+        </div>
+    </div>
+
+    <div class="hero-content">
+        <p>OMOR FARUK</p>
+        <h3 class="smoke-wrapper">
+            <span id="smoke-target"></span>
+        </h3>
+        <p class="hero-subtitle">Founder &amp; CEO — I work directly with clients to understand their needs, plan their projects and lead the delivery through my professional team.</p>
+        <div class="hero-cta-row">
+            <a href="#services" class="btn-primary">Explore What I Do</a>
+            <a href="#contact" class="btn-outline">Start a Project</a>
+        </div>
+    </div>
+
+    <!-- ===================== ABOUT ME ===================== -->
+    <section id="about" class="hero">
+        <div class="About">
+            <h2>About Me</h2>
+            <p>I'm Omor Faruk, Founder &amp; CEO based in Bangladesh. I work directly with clients to understand their goals, requirements and expectations, then lead the project from planning through final delivery.
+            <br>
+            <br>
+            I own and lead a digital company supported by a team of 25+ professionals working across different service areas. My role isn't to personally perform every task. Instead, I stay directly involved with the client, organize the project, coordinate the right people, monitor progress and personally review the final result before delivery.
+            <br>
+            <br>
+            For me, a project is more than a task to complete — it's a responsibility. I want every client to have a clear point of contact, a structured process, and confidence that someone is personally overseeing the work from beginning to end.</p>
+
+            <div class="about-cards">
+                <div class="about-cards-row">
+                    <div class="info-card">
+                        <div class="card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="card-text">
+                            <h3>LOCATION</h3>
+                            <p>Bangladesh</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="card-icon"><i class="fas fa-globe"></i></div>
+                        <div class="card-text">
+                            <h3>WORK SCOPE</h3>
+                            <p>Worldwide</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="card-text">
+                        <h3>WHO I WORK WITH</h3>
+                        <p>Businesses, Organizations, Entrepreneurs &amp; Individuals Worldwide</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mission-vision-grid reveal">
+                <div class="mv-card">
+                    <div class="mv-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>My Mission</h3>
+                    <p>To make quality digital solutions accessible to clients by building a dependable organization, connecting the right people to the right projects, and personally standing behind the work delivered.</p>
+                </div>
+                <div class="mv-card">
+                    <div class="mv-icon"><i class="fas fa-eye"></i></div>
+                    <h3>My Vision</h3>
+                    <p>To build a professional brand and company that international clients can trust for reliable, well-managed and carefully reviewed digital project delivery.</p>
+                </div>
+                <div class="mv-card">
+                    <div class="mv-icon"><i class="fas fa-diagram-project"></i></div>
+                    <h3>My Process</h3>
+                    <p>Understand the requirement, plan the project, assign it to the right team, track quality, then deliver and support — see the full workflow below.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <br />
+
+    <!-- ===================== SERVICES ===================== -->
+    <section id="services" class="premium-section">
+        <span class="eyebrow">What I Offer</span>
+        <h2 class="section-title">What I Do</h2>
+        <p class="section-subtitle">I work across a range of digital fields through my company and the team working under me. I stay involved in the planning, coordination and delivery of projects while the appropriate team members handle the execution.</p>
+
+        <div class="services-grid">
+            <div class="service-card reveal">
+                <div class="service-icon"><i class="fas fa-pen-ruler"></i></div>
+                <h3>UI/UX Design</h3>
+                <p class="service-desc">Clean, user-focused design that turns an idea into an interface people find easy and pleasant to use.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Wireframes &amp; prototypes</li>
+                    <li><i class="fas fa-check"></i> Design systems</li>
+                    <li><i class="fas fa-check"></i> Usability-focused layouts</li>
+                </ul>
+                <div class="service-tech">
+                    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/figma/figma-original.svg" class="tech-logo-img" alt="Figma logo" loading="lazy">Figma</span>
+                    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/photoshop/photoshop-original.svg" class="tech-logo-img" alt="Adobe Photoshop logo" loading="lazy">Photoshop</span>
+                    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/illustrator/illustrator-original.svg" class="tech-logo-img" alt="Adobe Illustrator logo" loading="lazy">Illustrator</span>
+                    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/xd/xd-original.svg" class="tech-logo-img" alt="Adobe XD logo" loading="lazy">Adobe XD</span>
+                </div>
+                <a href="#contact" class="service-cta">Create Your Design <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon"><i class="fas fa-code"></i></div>
+                <h3>Full Stack Web Development</h3>
+                <p class="service-desc">Custom websites and web apps, planned and managed from the first sketch to a live, working product.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Custom websites &amp; web apps</li>
+                    <li><i class="fas fa-check"></i> Responsive, fast-loading builds</li>
+                    <li><i class="fas fa-check"></i> Ongoing maintenance &amp; updates</li>
+                </ul>
+                <div class="service-tech">
+                    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/html5/html5-original.svg" class="tech-logo-img" alt="HTML5 logo" loading="lazy">HTML5</span>
+                    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/css3/css3-original.svg" class="tech-logo-img" alt="CSS3 logo" loading="lazy">CSS3</span>
+                    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/javascript/javascript-original.svg" class="tech-logo-img" alt="JavaScript logo" loading="lazy">JavaScript</span>
+                    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/nodejs/nodejs-original.svg" class="tech-logo-img" alt="Node.js logo" loading="lazy">Node.js</span>
+                    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/php/php-original.svg" class="tech-logo-img" alt="PHP logo" loading="lazy">PHP</span>
+                    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/mysql/mysql-original.svg" class="tech-logo-img" alt="MySQL logo" loading="lazy">MySQL</span>
+                </div>
+                <a href="#contact" class="service-cta">Build Your Website <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon"><i class="fas fa-mobile-screen-button"></i></div>
+                <h3>Mobile App Development</h3>
+                <p class="service-desc">Android and iOS apps managed from the first concept through to app-store delivery and updates.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> iOS &amp; Android apps</li>
+                    <li><i class="fas fa-check"></i> Cross-platform builds</li>
+                    <li><i class="fas fa-check"></i> App store submission &amp; support</li>
+                </ul>
+                <div class="service-tech">
+                    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/flutter/flutter-original.svg" class="tech-logo-img" alt="Flutter logo" loading="lazy">Flutter (Dart)</span>
+                    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/kotlin/kotlin-original.svg" class="tech-logo-img" alt="Kotlin logo" loading="lazy">Kotlin</span>
+                    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/swift/swift-original.svg" class="tech-logo-img" alt="Swift logo" loading="lazy">Swift</span>
+                </div>
+                <a href="#contact" class="service-cta">Build Your Mobile App <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon"><i class="fas fa-terminal"></i></div>
+                <h3>Software Development</h3>
+                <p class="service-desc">Custom software and enterprise applications, planned and built end-to-end to fit your exact business workflow.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Custom software &amp; enterprise apps</li>
+                    <li><i class="fas fa-check"></i> Desktop &amp; backend systems</li>
+                    <li><i class="fas fa-check"></i> API integration &amp; maintenance</li>
+                </ul>
+                <div class="service-tech">
+                    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/java/java-original.svg" class="tech-logo-img" alt="Java logo" loading="lazy">Java</span>
+                    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/csharp/csharp-original.svg" class="tech-logo-img" alt="C# logo" loading="lazy">C#</span>
+                    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/dotnetcore/dotnetcore-original.svg" class="tech-logo-img" alt=".NET logo" loading="lazy">.NET</span>
+                    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/spring/spring-original.svg" class="tech-logo-img" alt="Spring Boot logo" loading="lazy">Spring Boot</span>
+                </div>
+                <a href="#contact" class="service-cta">Build Your Software <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon"><i class="fas fa-robot"></i></div>
+                <h3>AI Automation</h3>
+                <p class="service-desc">Automating repetitive work and connecting AI tools into your business so your team spends less time on manual tasks.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Workflow &amp; task automation</li>
+                    <li><i class="fas fa-check"></i> Chatbots &amp; AI assistants</li>
+                    <li><i class="fas fa-check"></i> Data collection &amp; reporting pipelines</li>
+                </ul>
+                <div class="service-tech">
+                    <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/python/python-original.svg" class="tech-logo-img" alt="Python logo" loading="lazy">Python</span>
+                    <span>REST APIs</span>
+                    <span>Automation Tools</span>
+                </div>
+                <a href="#contact" class="service-cta">Automate Your Workflow <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                <h3>Digital Marketing</h3>
+                <p class="service-desc">Data-driven marketing that puts your product in front of the right audience and turns clicks into clients.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Paid ad campaigns</li>
+                    <li><i class="fas fa-check"></i> SEO &amp; organic growth</li>
+                    <li><i class="fas fa-check"></i> Analytics &amp; reporting</li>
+                </ul>
+                <div class="service-tech">
+                    <span><img src="https://www.vectorlogo.zone/logos/google_ads/google_ads-icon.svg" class="tech-logo-img" alt="Google Ads logo" loading="lazy">Google Ads</span>
+                    <span><img src="https://cdn.simpleicons.org/googleanalytics" class="tech-logo-img" alt="Google Analytics logo" loading="lazy">Google Analytics</span>
+                    <span><img src="https://cdn.simpleicons.org/meta" class="tech-logo-img" alt="Meta logo" loading="lazy">Meta Ads</span>
+                </div>
+                <a href="#contact" class="service-cta">Grow Your Business <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <br />
+
+    <!-- ===================== WHY CHOOSE ME ===================== -->
+    <section id="why-choose-me" class="premium-section">
+        <span class="eyebrow">The Difference</span>
+        <h2 class="section-title">Why Work With Me</h2>
+
+        <div class="why-grid">
+            <div class="why-card reveal">
+                <div class="why-icon"><i class="fas fa-user-check"></i></div>
+                <h3>Direct Communication</h3>
+                <p>You work directly with me throughout the project instead of having to navigate multiple contacts.</p>
+            </div>
+            <div class="why-card reveal">
+                <div class="why-icon"><i class="fas fa-medal"></i></div>
+                <h3>Personal Oversight</h3>
+                <p>I stay involved from planning to final delivery and personally review the completed work before it reaches you.</p>
+            </div>
+            <div class="why-card reveal">
+                <div class="why-icon"><i class="fas fa-bolt"></i></div>
+                <h3>Organized Delivery</h3>
+                <p>I coordinate the right people and keep the project structured around clear requirements, milestones and priorities.</p>
+            </div>
+            <div class="why-card reveal">
+                <div class="why-icon"><i class="fas fa-microchip"></i></div>
+                <h3>Experienced Team Behind Me</h3>
+                <p>I lead a team of 25+ professionals working across six core service areas.</p>
+            </div>
+            <div class="why-card reveal">
+                <div class="why-icon"><i class="fas fa-comments"></i></div>
+                <h3>Quality Control</h3>
+                <p>Work is reviewed first by the person who completed it, then by the relevant Category Leader, and finally by me before delivery.</p>
+            </div>
+            <div class="why-card reveal">
+                <div class="why-icon"><i class="fas fa-life-ring"></i></div>
+                <h3>Long-Term Support</h3>
+                <p>I remain available after delivery for future updates, improvements, fixes and project-related support.</p>
+            </div>
+        </div>
+    </section>
+
+    <br />
+
+    <!-- ===================== TECHNOLOGY BEHIND MY PROJECTS ===================== -->
+    <section id="technologies" class="premium-section">
+        <span class="eyebrow">The Toolkit</span>
+        <h2 class="section-title">The Technology Behind My Projects</h2>
+        <p class="section-subtitle">Different projects require different technologies. Through my company and the professionals working with me, I can coordinate projects across a broad range of modern technologies.</p>
+
+        <div class="tech-categories">
+            <div class="tech-category reveal">
+                <h3><i class="fas fa-pen-ruler"></i> UI/UX Design</h3>
+                <div class="tech-badges">
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/figma/figma-original.svg" class="tech-logo-img" alt="Figma logo" loading="lazy">Figma</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/xd/xd-original.svg" class="tech-logo-img" alt="Adobe XD logo" loading="lazy">Adobe XD</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/photoshop/photoshop-original.svg" class="tech-logo-img" alt="Adobe Photoshop logo" loading="lazy">Photoshop</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/illustrator/illustrator-original.svg" class="tech-logo-img" alt="Adobe Illustrator logo" loading="lazy">Illustrator</span>
+                </div>
+            </div>
+            <div class="tech-category reveal">
+                <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                <div class="tech-badges">
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/html5/html5-original.svg" class="tech-logo-img" alt="HTML5 logo" loading="lazy">HTML5</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/css3/css3-original.svg" class="tech-logo-img" alt="CSS3 logo" loading="lazy">CSS3</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/sass/sass-original.svg" class="tech-logo-img" alt="Sass logo" loading="lazy">Sass</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/tailwindcss/tailwindcss-original.svg" class="tech-logo-img" alt="Tailwind CSS logo" loading="lazy">Tailwind CSS</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/bootstrap/bootstrap-original.svg" class="tech-logo-img" alt="Bootstrap logo" loading="lazy">Bootstrap</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/materialui/materialui-original.svg" class="tech-logo-img" alt="Material UI logo" loading="lazy">Material UI</span>
+                </div>
+            </div>
+            <div class="tech-category reveal">
+                <h3><i class="fas fa-server"></i> Backend</h3>
+                <div class="tech-badges">
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/nodejs/nodejs-original.svg" class="tech-logo-img" alt="Node.js logo" loading="lazy">Node.js Runtime</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/nginx/nginx-original.svg" class="tech-logo-img" alt="Nginx logo" loading="lazy">Nginx</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/apache/apache-original.svg" class="tech-logo-img" alt="Apache logo" loading="lazy">Apache</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/graphql/graphql-plain.svg" class="tech-logo-img" alt="GraphQL logo" loading="lazy">GraphQL</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/oauth/oauth-original.svg" class="tech-logo-img" alt="OAuth logo" loading="lazy">OAuth 2.0</span>
+                </div>
+            </div>
+            <div class="tech-category reveal">
+                <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                <div class="tech-badges">
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/javascript/javascript-original.svg" class="tech-logo-img" alt="JavaScript logo" loading="lazy">JavaScript</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/typescript/typescript-original.svg" class="tech-logo-img" alt="TypeScript logo" loading="lazy">TypeScript</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/python/python-original.svg" class="tech-logo-img" alt="Python logo" loading="lazy">Python</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/java/java-original.svg" class="tech-logo-img" alt="Java logo" loading="lazy">Java</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/php/php-original.svg" class="tech-logo-img" alt="PHP logo" loading="lazy">PHP</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/c/c-original.svg" class="tech-logo-img" alt="C logo" loading="lazy">C</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/cplusplus/cplusplus-original.svg" class="tech-logo-img" alt="C++ logo" loading="lazy">C++</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/csharp/csharp-original.svg" class="tech-logo-img" alt="C# logo" loading="lazy">C#</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/dart/dart-original.svg" class="tech-logo-img" alt="Dart logo" loading="lazy">Dart</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/kotlin/kotlin-original.svg" class="tech-logo-img" alt="Kotlin logo" loading="lazy">Kotlin</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/swift/swift-original.svg" class="tech-logo-img" alt="Swift logo" loading="lazy">Swift</span>
+                </div>
+            </div>
+            <div class="tech-category reveal">
+                <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
+                <div class="tech-badges">
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/react/react-original.svg" class="tech-logo-img" alt="React logo" loading="lazy">React</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/nextjs/nextjs-original.svg" class="tech-logo-img" alt="Next.js logo" loading="lazy">Next.js</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/express/express-original.svg" class="tech-logo-img" alt="Express.js logo" loading="lazy">Express.js</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/nestjs/nestjs-original.svg" class="tech-logo-img" alt="NestJS logo" loading="lazy">NestJS</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/django/django-plain.svg" class="tech-logo-img" alt="Django logo" loading="lazy">Django</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/fastapi/fastapi-original.svg" class="tech-logo-img" alt="FastAPI logo" loading="lazy">FastAPI</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/laravel/laravel-original.svg" class="tech-logo-img" alt="Laravel logo" loading="lazy">Laravel</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/symfony/symfony-original.svg" class="tech-logo-img" alt="Symfony logo" loading="lazy">Symfony</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/dotnetcore/dotnetcore-original.svg" class="tech-logo-img" alt=".NET logo" loading="lazy">.NET</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/dotnetcore/dotnetcore-original.svg" class="tech-logo-img" alt="ASP.NET Core logo" loading="lazy">ASP.NET Core</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/spring/spring-original.svg" class="tech-logo-img" alt="Spring Boot logo" loading="lazy">Spring Boot</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/ktor/ktor-original.svg" class="tech-logo-img" alt="Ktor logo" loading="lazy">Ktor</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/jetpackcompose/jetpackcompose-original.svg" class="tech-logo-img" alt="Jetpack Compose logo" loading="lazy">Jetpack Compose</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/flutter/flutter-original.svg" class="tech-logo-img" alt="Flutter logo" loading="lazy">Flutter</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/qt/qt-original.svg" class="tech-logo-img" alt="Qt logo" loading="lazy">Qt</span>
+                    <span class="tech-badge">SwiftUI</span>
+                </div>
+            </div>
+            <div class="tech-category reveal">
+                <h3><i class="fas fa-database"></i> Database</h3>
+                <div class="tech-badges">
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/mysql/mysql-original.svg" class="tech-logo-img" alt="MySQL logo" loading="lazy">MySQL</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/postgresql/postgresql-original.svg" class="tech-logo-img" alt="PostgreSQL logo" loading="lazy">PostgreSQL</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/mongodb/mongodb-original.svg" class="tech-logo-img" alt="MongoDB logo" loading="lazy">MongoDB</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/sqlite/sqlite-original.svg" class="tech-logo-img" alt="SQLite logo" loading="lazy">SQLite</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/firebase/firebase-original.svg" class="tech-logo-img" alt="Firebase logo" loading="lazy">Firebase</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/redis/redis-original.svg" class="tech-logo-img" alt="Redis logo" loading="lazy">Redis</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/oracle/oracle-original.svg" class="tech-logo-img" alt="Oracle DB logo" loading="lazy">Oracle DB</span>
+                </div>
+            </div>
+            <div class="tech-category reveal">
+                <h3><i class="fas fa-chart-line"></i> Marketing &amp; Analytics</h3>
+                <div class="tech-badges">
+                    <span class="tech-badge"><img src="https://www.vectorlogo.zone/logos/google_ads/google_ads-icon.svg" class="tech-logo-img" alt="Google Ads logo" loading="lazy">Google Ads</span>
+                    <span class="tech-badge"><img src="https://cdn.simpleicons.org/meta" class="tech-logo-img" alt="Meta logo" loading="lazy">Meta Ads</span>
+                    <span class="tech-badge"><img src="https://cdn.simpleicons.org/googleanalytics" class="tech-logo-img" alt="Google Analytics logo" loading="lazy">Google Analytics</span>
+                </div>
+            </div>
+            <div class="tech-category reveal">
+                <h3><i class="fas fa-code-branch"></i> Version Control &amp; Deployment</h3>
+                <div class="tech-badges">
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/git/git-original.svg" class="tech-logo-img" alt="Git logo" loading="lazy">Git</span>
+                    <span class="tech-badge"><img src="https://cdn.simpleicons.org/github/ffffff" class="tech-logo-img" alt="GitHub logo" loading="lazy">GitHub</span>
+                    <span class="tech-badge"><img src="https://cdn.simpleicons.org/netlify" class="tech-logo-img" alt="Netlify logo" loading="lazy">Netlify</span>
+                    <span class="tech-badge"><img src="https://cdn.simpleicons.org/vercel/ffffff" class="tech-logo-img" alt="Vercel logo" loading="lazy">Vercel</span>
+                </div>
+            </div>
+            <div class="tech-category reveal">
+                <h3><i class="fas fa-toolbox"></i> Development Tools</h3>
+                <div class="tech-badges">
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/vscode/vscode-original.svg" class="tech-logo-img" alt="Visual Studio Code logo" loading="lazy">Visual Studio Code</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/visualstudio/visualstudio-plain.svg" class="tech-logo-img" alt="Visual Studio logo" loading="lazy">Visual Studio</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/pycharm/pycharm-original.svg" class="tech-logo-img" alt="PyCharm logo" loading="lazy">PyCharm</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/intellij/intellij-original.svg" class="tech-logo-img" alt="IntelliJ IDEA logo" loading="lazy">IntelliJ IDEA</span>
+                    <span class="tech-badge"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@master/icons/androidstudio/androidstudio-original.svg" class="tech-logo-img" alt="Android Studio logo" loading="lazy">Android Studio</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br />
+
+    <!-- ===================== HOW I WORK ===================== -->
+    <section id="howiwork" class="premium-section">
+        <span class="eyebrow">The Workflow</span>
+        <h2 class="section-title">How I Work</h2>
+        <p class="section-subtitle">I keep the client relationship direct and the project process structured. You work with me, while the team behind me handles the execution required for the project.</p>
+
+        <div class="timeline">
+            <div class="timeline-step reveal">
+                <div class="timeline-number">01</div>
+                <div class="timeline-body"><h3>Contact Me</h3><p>You contact me directly with your idea, requirement or business goal.</p></div>
+            </div>
+            <div class="timeline-step reveal">
+                <div class="timeline-number">02</div>
+                <div class="timeline-body"><h3>Requirement Discussion</h3><p>I discuss your goals, requirements, budget, timeline and expectations with you.</p></div>
+            </div>
+            <div class="timeline-step reveal">
+                <div class="timeline-number">03</div>
+                <div class="timeline-body"><h3>Project Planning</h3><p>I turn the requirements into a practical plan with clear priorities and milestones.</p></div>
+            </div>
+            <div class="timeline-step reveal">
+                <div class="timeline-number">04</div>
+                <div class="timeline-body"><h3>Team &amp; Category Assignment</h3><p>I identify the relevant service category and assign the work to the appropriate Category Leader and team members.</p></div>
+            </div>
+            <div class="timeline-step reveal">
+                <div class="timeline-number">05</div>
+                <div class="timeline-body"><h3>Project Execution</h3><p>The assigned team members carry out the required work while the Category Leader oversees it within that service area.</p></div>
+            </div>
+            <div class="timeline-step reveal">
+                <div class="timeline-number">06</div>
+                <div class="timeline-body"><h3>Team Member Self-Review</h3><p>The person or people who completed the work review it first and correct any issues they find.</p></div>
+            </div>
+            <div class="timeline-step reveal">
+                <div class="timeline-number">07</div>
+                <div class="timeline-body"><h3>Category Leader Review</h3><p>The relevant Category Leader reviews the work for quality, completeness and project requirements.</p></div>
+            </div>
+            <div class="timeline-step reveal">
+                <div class="timeline-number">08</div>
+                <div class="timeline-body"><h3>My Final Review</h3><p>After the Category Leader approves the work, it comes to me for a final review.</p></div>
+            </div>
+            <div class="timeline-step reveal">
+                <div class="timeline-number">09</div>
+                <div class="timeline-body"><h3>Final Delivery</h3><p>Once I approve the completed work, it is delivered to you.</p></div>
+            </div>
+            <div class="timeline-step reveal">
+                <div class="timeline-number">10</div>
+                <div class="timeline-body"><h3>Ongoing Support</h3><p>I remain available after delivery for future updates, improvements, fixes and other project-related support.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <br />
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <!-- Sample / placeholder testimonials — replace with real client quotes before publishing. -->
+    <section id="testimonials" class="premium-section">
+        <h2 class="section-title">What You Can Expect</h2>
+
+        <div class="testimonial-slider">
+            <div class="testimonial-track" id="testimonialTrack">
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>You communicate directly with me, and project discussions remain documented through chat for easy reference.</p>
+                    <div class="testimonial-author">Chat-First Communication</div>
+                </div>
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>I keep the project structured with clear requirements, milestones and responsibilities.</p>
+                    <div class="testimonial-author">Organized Project Management</div>
+                </div>
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>I keep you informed about what has been completed, what is in progress and what comes next.</p>
+                    <div class="testimonial-author">Regular Progress Updates</div>
+                </div>
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>While you work directly with me, a team of 25+ professionals works behind the scenes to execute the project.</p>
+                    <div class="testimonial-author">A Team Working Behind Me</div>
+                </div>
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>The completed work is reviewed by the person who performed it, then by the relevant Category Leader, and finally by me.</p>
+                    <div class="testimonial-author">Three-Level Quality Review</div>
+                </div>
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>My involvement doesn't automatically end after delivery. I remain available for future project needs when required.</p>
+                    <div class="testimonial-author">Long-Term Support</div>
+                </div>
+            </div>
+            <div class="testimonial-dots" id="testimonialDots"></div>
+        </div>
+    </section>
+
+    <br />
+
+    <!-- ===================== FAQ ===================== -->
+    <section id="faq" class="premium-section">
+        <span class="eyebrow">Questions</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">Do you do all the work yourself?<i class="fas fa-plus faq-icon"></i></button>
+                <div class="faq-answer"><p>No. I'm the Founder &amp; CEO and the main client-facing person. I handle communication, requirements, planning, coordination, project oversight and final review. The team working under me handles the technical, creative and operational execution required for each project.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How do I start a project with you?<i class="fas fa-plus faq-icon"></i></button>
+                <div class="faq-answer"><p>You can contact me directly through email, LinkedIn or WhatsApp. I'll discuss your requirements, goals, budget and timeline with you before planning the next steps.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Who will I communicate with during the project?<i class="fas fa-plus faq-icon"></i></button>
+                <div class="faq-answer"><p>You'll communicate directly with me. I remain your main point of contact throughout the project.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How does your team work?<i class="fas fa-plus faq-icon"></i></button>
+                <div class="faq-answer"><p>I lead a team of 25+ professionals across six core service areas. Each service area has a dedicated Category Leader who oversees the work in that area.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How do you check the quality of the work?<i class="fas fa-plus faq-icon"></i></button>
+                <div class="faq-answer"><p>The person who completes the work reviews it first. Then the relevant Category Leader reviews it. Finally, the work comes to me for a final review before I approve delivery.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Do all 25+ team members review each project?<i class="fas fa-plus faq-icon"></i></button>
+                <div class="faq-answer"><p>No. Only the people directly involved in the project handle its execution and review. The person who completed the work checks it first, the relevant Category Leader checks it next, and I perform the final review.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What types of clients do you work with?<i class="fas fa-plus faq-icon"></i></button>
+                <div class="faq-answer"><p>I'm open to working with businesses, organizations, entrepreneurs and individuals worldwide. The key consideration is whether the project can be effectively delivered through the capabilities available through my company.</p></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What happens after delivery?<i class="fas fa-plus faq-icon"></i></button>
+                <div class="faq-answer"><p>I remain available for future updates, improvements, fixes and other project-related support when needed.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <br />
+
+    <!-- ===================== CALL TO ACTION ===================== -->
+    <section id="cta-banner" class="cta-banner reveal">
+        <h2>Have a project in mind?</h2>
+        <p>Let's discuss the idea, plan it properly and find the right way to bring it to life.</p>
+        <a href="#contact" class="btn-primary">Let's Talk</a>
+    </section>
+
+    <br />
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="premium-section contact-section">
+        <span class="eyebrow">Let's Work Together</span>
+        <h2 class="section-title">Contact</h2>
+        <p class="section-subtitle">If you have a project, business idea or digital requirement you'd like to discuss, contact me directly.</p>
+
+        <div class="contact-grid">
+            <div class="contact-quick-links">
+                <a href="mailto:codewithomor@gmail.com" class="quick-link-card">
+                    <span class="quick-link-icon"><i class="fas fa-envelope"></i></span>
+                    <div class="quick-link-text"><h3>Email</h3><p>codewithomor@gmail.com</p></div>
+                </a>
+                <a href="https://www.linkedin.com/in/omor-faruk16/" target="_blank" class="quick-link-card">
+                    <span class="quick-link-icon"><i class="fab fa-linkedin"></i></span>
+                    <div class="quick-link-text"><h3>LinkedIn</h3><p>Connect with me</p></div>
+                </a>
+                <a href="https://wa.me/+8801933559831" target="_blank" class="quick-link-card">
+                    <span class="quick-link-icon"><i class="fab fa-whatsapp"></i></span>
+                    <div class="quick-link-text"><h3>WhatsApp</h3><p>Message me directly</p></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="mailto:codewithomor@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.facebook.com/share/18e7N9Y3kr/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://youtube.com/@omor_bhai_16?si=rFuAT7LteZLnqcGO" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@omorbhai_16?_r=1&_t=ZS-95OkCOlTrXx" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.linkedin.com/in/omor-faruk16/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://wa.me/+8801933559831" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://t.me/omorbhai_16" target="_blank"><i class="fab fa-telegram"></i></a>
+            <a href="https://github.com/omorbhai16" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <p>&copy; 2026 Omor Faruk, All Rights Reserved</p>
+    </footer>
+
+    <a href="https://omorbhai.site/" target="_blank" rel="noopener" class="btn btn-agency">Visit Agency</a>
+    <a href="mailto:codewithomor@gmail.com" class="btn btn-contact">Contact Me</a>
+
+    <script src="web.js"></script>
+</body>
+</html>
