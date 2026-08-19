@@ -36,11 +36,6 @@ html {
 }
 
 /* ===================== Fixed background layer ===================== */
-/* এটাকে আলাদা fixed layer হিসেবে বসানো হয়েছে (position: fixed, 100vw/100vh) যাতে:
-   ১) ব্যাকগ্ৰাউন্ড সবসময় পুরো স্ক্রিন সম্পূর্ণভাবে কভার করে (cover)
-   ২) স্ক্রল করলে ব্যাকগ্ৰাউন্ড একদম স্থির থাকে, কোনো নড়াচড়া/জাম্প করে না
-   ৩) মোবাইল Chrome-এও নির্ভরযোগ্যভাবে কাজ করে (body-এর উপর সরাসরি
-      background-attachment: fixed ব্যবহার করলে অনেক মোবাইল ব্রাউজারে ঠিকমতো কাজ করে না) */
 .Body::before {
     content: "";
     position: fixed;
@@ -252,9 +247,6 @@ html {
 
 
 /* ===================== Profile / Hero ===================== */
-/* Grid দিয়ে ৩টা কলাম বানানো হয়েছে: বাম (ঘড়ি) | মাঝখান (ছবি) | ডান (খালি/spacer)
-   এতে ছবি সবসময় পেজের ঠিক মাঝখানে থাকবে, আর ঘড়ি সবসময় ছবির বাম পাশেই থাকবে,
-   কোনো screen size এ ঘড়ি ছবির উপরে/নিচে/ডানে চলে যাবে না। */
 .omor-image {
     display: grid;
     grid-template-columns: minmax(90px, 1fr) auto minmax(90px, 1fr);
@@ -449,7 +441,6 @@ html {
 
 
 /* ===================== Floating buttons (Visit Agency / Contact Me) ===================== */
-/* Fixed to the viewport, always visible, bottom-left / bottom-right, never move with scroll */
 .btn {
     position: fixed;
     bottom: clamp(10px, 2vw, 15px);
