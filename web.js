@@ -69,7 +69,7 @@ document.querySelectorAll('.skill-box').forEach(box => {
 
 
 //hero rotating role text animaton
-const skillList = ["Digital Solutions Consultant", "Project Manager", "Full Stack Web Development", "Software Development", "AI Automation", "Mobile App Development", "UI/UX Design", "Digital Marketing"];
+const skillList = ["Digital Solutions Consultant", "Full Stack Web Development", "Software Development", "AI Automation", "Mobile App Development"];
 let wordIdx = 0;
 const target = document.getElementById('smoke-target');
 
