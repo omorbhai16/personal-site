@@ -41,11 +41,8 @@
 
   const rotatorEl = document.getElementById('rotatorWord');
   const ROTATOR_WORDS = [
-    'Website UI',
-    'App UI',
-    'Software UI',
     'Web UI Design',
-    'Mobile UI Design',
+    'App UI Design',
     'Software UI Design'
   ];
 
