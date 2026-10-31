@@ -45,9 +45,9 @@ $("#yr").textContent = new Date().getFullYear();
 
 const TITLES = [
   "Full Stack Web Developer",
-  "Software Developer",
   "Software Engineer",
-  "AI Automation Socialist"
+  "Software Developer",
+  "Cyber Security"
 ];
 
 let wi = 0;
