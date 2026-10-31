@@ -1,0 +1,33 @@
+Logo sources (downloaded and stored locally; nothing is loaded from the internet at runtime)
+
+Devicon (https://devicon.dev, MIT licence) - official brand colours
+  html.svg, css.svg, cpp.svg, python.svg, java.svg, typescript.svg, react.svg,
+  nextjs.svg, git.svg, visual-studio.svg, vscode.svg, github.svg
+  (github.svg: the official black mark recoloured white so it is visible on a dark background,
+   which GitHub's logo guidelines permit)
+
+gilbarbara/logos (https://github.com/gilbarbara/logos) - full-colour brand logos
+  whatsapp.svg, facebook.svg
+
+SuperTinyIcons (https://github.com/edent/SuperTinyIcons) - Gmail multicolour "M"
+  gmail.svg (white background tile removed, viewBox cropped to the artwork)
+
+All logos remain trademarks of their respective owners; use them only to refer to those products/services.
+
+Added logos (javascript, tailwindcss, bootstrap, nestjs, fastapi, spring, postgresql, mongodb, qt):
+devicon npm package (original colored brand logos) - https://devicon.dev
+
+
+Cyber Security logos
+Simple Icons (https://simpleicons.org, CC0) - official brand marks, recoloured with brand colours
+  kali-linux.svg (#367BF0), burp-suite.svg (#FF6633), wireshark.svg (#1679A7),
+  owasp-top-10.svg (OWASP mark recoloured white so it is visible on a dark background)
+
+Font Awesome Free (https://fontawesome.com, icons CC BY 4.0) - these topics have no official brand logo
+  ethical-hacking.svg (user-secret), penetration-testing.svg (crosshairs), network-security.svg (network-wired),
+  web-application-security.svg (shield-halved), cryptography.svg (key)
+
+nmap.svg - hand-drawn eye mark in Nmap's blue style. To use the official artwork, download it from https://nmap.org
+  and save it over assets/logos/nmap.svg (same file name, no code change needed).
+
+All logos remain trademarks of their respective owners.
