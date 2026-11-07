@@ -47,9 +47,7 @@ const TITLES = [
   "Full Stack Web Developer",
   "Software Engineer",
   "Software Developer",
-  "Cyber Security",
-  "Security Analyst",
-  "Security Engineer"
+  "Cyber Security"
 ];
 
 let wi = 0;
